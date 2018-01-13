@@ -1,31 +1,42 @@
-import turtle as t
+import turtle
 import maze
 
 def Right():
-    t.setheading(0)
-    t.forward(20)
+    user.setheading(0)
+    user.forward(20)
 
 def Left():
-    t.setheading(180)
-    t.forward(20)
+    user.setheading(180)
+    user.forward(20)
 
 def Up():
-    t.setheading(90)
-    t.forward(20)
+    user.setheading(90)
+    user.forward(20)
 
 def Down():
-    t.setheading(270)
-    t.forward(20)
-
-# Main Start
+    user.setheading(270)
+    user.forward(20)
 
 name = input("Please Typing your name: ")
 
-t.shape("turtle")
-t.speed(0)
-t.onkeypress(Right, "Right")
-t.onkeypress(Left, "Left")
-t.onkeypress(Up, "Up")
-t.onkeypress(Down, "Down")
-t.listen()
+user = turtle.Turtle()
+user.shape("turtle")
+user.color("lime")
+user.width(5)
+
+user.penup()
+user.right(90)
+user.forward(180)
+user.left(180)
+user.pendown()
+
+
+user.forward(40)
+user.right(90)
+
+turtle.onkeypress(Right, "Right")
+turtle.onkeypress(Left, "Left")
+turtle.onkeypress(Up, "Up")
+turtle.onkeypress(Down, "Down")
+turtle.listen()
     
