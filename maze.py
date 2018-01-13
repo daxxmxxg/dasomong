@@ -5,6 +5,7 @@ george.width(5)
 george.hideturtle()
 george.speed(0)
 
+# Draw Maze
 def drawMazeSection(t):
   for i in range(2):
     t.pendown()
@@ -28,10 +29,12 @@ def drawMazeSection(t):
   t.forward(40)
   t.pendown()
   t.forward(30)
-  
+
+# Maze Color
 colors = ["red", "blue", "Yellow"]
 y = 160
 
+# Maze
 for color in colors:
   george.color(color)
   george.penup()

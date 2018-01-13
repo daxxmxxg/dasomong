@@ -1,5 +1,6 @@
 import turtle
 import maze
+# key
 
 def Right():
     user.setheading(0)
@@ -16,9 +17,7 @@ def Up():
 def Down():
     user.setheading(270)
     user.forward(20)
-
-#name = input("Please Typing your name: ")
-
+# user character
 user = turtle.Turtle()
 user.shape("turtle")
 user.color("lime")
@@ -29,11 +28,10 @@ user.right(90)
 user.forward(180)
 user.left(180)
 user.pendown()
-
-
 user.forward(40)
 user.right(90)
 
+# user move(?)
 turtle.onkeypress(Right, "Right")
 turtle.onkeypress(Left, "Left")
 turtle.onkeypress(Up, "Up")
