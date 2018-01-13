@@ -17,6 +17,7 @@ def Up():
 def Down():
     user.setheading(270)
     user.forward(20)
+    
 # user character
 user = turtle.Turtle()
 user.shape("turtle")
@@ -37,4 +38,6 @@ turtle.onkeypress(Left, "Left")
 turtle.onkeypress(Up, "Up")
 turtle.onkeypress(Down, "Down")
 turtle.listen()
+
+# next, add Score
     
