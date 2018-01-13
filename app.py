@@ -17,9 +17,6 @@ def Down():
     t.setheading(270)
     t.forward(20)
 
-def Map():
-    
-
 # Main Start
 
 name = input("Please Typing your name: ")
