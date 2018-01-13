@@ -17,7 +17,7 @@ def Down():
     user.setheading(270)
     user.forward(20)
 
-name = input("Please Typing your name: ")
+#name = input("Please Typing your name: ")
 
 user = turtle.Turtle()
 user.shape("turtle")
