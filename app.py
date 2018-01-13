@@ -1,4 +1,5 @@
 import turtle as t
+import maze
 
 def Right():
     t.setheading(0)
